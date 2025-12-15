@@ -1,4 +1,5 @@
 import type { User, ProductionEntry, Task, InventoryItem } from '@/types/dwoms';
+import { STORAGE_KEYS, getStorageItem, setStorageItem } from '@/lib/storage';
 
 // Generate unique IDs
 const generateId = () => Math.random().toString(36).substring(2, 15);
@@ -207,8 +208,6 @@ export const dummyInventory: InventoryItem[] = [
 
 // Initialize dummy data in localStorage
 export function initializeDummyData(): void {
-  const { STORAGE_KEYS, getStorageItem, setStorageItem } = require('./storage');
-  
   // Only initialize if data doesn't exist
   if (getStorageItem(STORAGE_KEYS.USERS, []).length === 0) {
     setStorageItem(STORAGE_KEYS.USERS, dummyUsers);
