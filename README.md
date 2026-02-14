@@ -369,10 +369,7 @@ Full project deployment flow
 
 👨‍💻 Developed By
 
-Teja
-Information Science & Technology
-SDMIT Engineering College
-
+Teja Bharadwaj(Backend) and Shreyas(Frontend)
 
 ---
 
